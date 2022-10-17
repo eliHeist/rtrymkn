@@ -1,4 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
-    padding: 0;
-    margin: 0;
+    outline: 1px solid rgb(144, 144, 144);
+}
+
+.container{
+    @apply mx-auto;
+}
+
+/* header */
+.logo img{
+    @apply max-h-[100px]
+}
+.header-{
+    &widgets{
+        @apply flex gap-8;
+    }
+    &contact-widget{
+        @apply flex content-center;
+        .icon{
+            @apply text-6xl mr-2 grid content-center;
+            i{
+                @apply transform -rotate-12;
+            }
+        }
+        .text{
+            @apply grid content-center;
+            h2{
+                @apply font-bold uppercase text-primary-500;
+            }
+            p{
+                @apply text-gray-700
+            }
+        }
+    }
+    &social-widget{
+        @apply grid grid-flow-col content-center gap-4;
+        .social-icon{
+            @apply text-2xl grid place-content-center rounded-full aspect-square text-white w-12 h-12;
+        }
+    }
 }
