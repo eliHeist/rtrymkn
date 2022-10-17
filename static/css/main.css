@@ -7,6 +7,11 @@
   font-size: 1rem;
 }
 
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .container {
   @apply mx-auto;
 }
@@ -27,10 +32,10 @@
   @apply flex content-center;
 }
 .header-contact-widget .icon {
-  @apply text-6xl mr-2 grid content-center;
+  @apply mr-2 grid content-center;
 }
 .header-contact-widget .icon i {
-  @apply transform -rotate-12;
+  @apply transform -rotate-12 text-6xl text-slate-600;
 }
 .header-contact-widget .text {
   @apply grid content-center;
@@ -52,6 +57,9 @@
 /*#region single slides*/
 .slide {
   @apply relative overflow-hidden;
+}
+.slide img {
+  @apply max-h-[700px];
 }
 .slide .content {
   @apply absolute top-0 left-0 w-full h-full grid content-center;

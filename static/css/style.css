@@ -542,6 +542,14 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
 .h-full {
   height: 100%;
 }
@@ -564,6 +572,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .bg-blue-900 {
@@ -596,6 +608,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -609,6 +626,11 @@ video {
   outline: 1px solid rgb(144, 144, 144);
   font-family: poppins;
   font-size: 1rem;
+}
+
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -643,13 +665,15 @@ video {
   margin-right: 0.5rem;
   display: grid;
   align-content: center;
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .header-contact-widget .icon i {
   --tw-rotate: -12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-size: 3.75rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
 .header-contact-widget .text {
@@ -696,6 +720,10 @@ video {
 .slide {
   position: relative;
   overflow: hidden;
+}
+
+.slide img {
+  max-height: 700px;
 }
 
 .slide .content {
