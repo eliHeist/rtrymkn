@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 * {
-    outline: 1px solid rgb(144, 144, 144);
+    // outline: 1px solid rgb(144, 144, 144);
     font-family: poppins;
     font-size: 1rem;
 }
 body, html{
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.link{
+    @apply text-secondary-500 font-medium
 }
 
 .container {
@@ -86,6 +90,28 @@ body, html{
 }
 /*#endregion*/
 
+/*#region services*/
+.service{
+    &-card{
+        @apply flex content-center;
+        .icon{
+            @apply p-4;
+            i{
+                @apply text-6xl text-secondary-500;
+            }
+        }
+        .grid{
+            @apply gap-3;
+            h3{
+                @apply font-bold uppercase mt-0;
+            }
+            p{
+                @apply text-slate-900;
+            }
+        }
+    }
+}
+/*#endregion*/
 
 
 

@@ -608,9 +608,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .uppercase {
@@ -623,7 +623,6 @@ video {
 }
 
 * {
-  outline: 1px solid rgb(144, 144, 144);
   font-family: poppins;
   font-size: 1rem;
 }
@@ -631,6 +630,12 @@ video {
 body, html {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.link {
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(252 175 60 / var(--tw-text-opacity));
 }
 
 .container {
@@ -667,6 +672,21 @@ body, html {
   align-content: center;
 }
 
+.service-card .header-contact-widget .icon {
+  gap: 0.75rem;
+}
+
+.service-card .header-contact-widget .icon h3 {
+  margin-top: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-card .header-contact-widget .icon p {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
 .header-contact-widget .icon i {
   --tw-rotate: -12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -679,6 +699,21 @@ body, html {
 .header-contact-widget .text {
   display: grid;
   align-content: center;
+}
+
+.service-card .header-contact-widget .text {
+  gap: 0.75rem;
+}
+
+.service-card .header-contact-widget .text h3 {
+  margin-top: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-card .header-contact-widget .text p {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .header-contact-widget .text h2 {
@@ -700,6 +735,21 @@ body, html {
   gap: 1rem;
 }
 
+.service-card .header-social-widget {
+  gap: 0.75rem;
+}
+
+.service-card .header-social-widget h3 {
+  margin-top: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-card .header-social-widget p {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
 .header-social-widget .social-icon {
   display: grid;
   aspect-ratio: 1 / 1;
@@ -711,6 +761,21 @@ body, html {
   line-height: 2rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.service-card .header-social-widget .social-icon {
+  gap: 0.75rem;
+}
+
+.service-card .header-social-widget .social-icon h3 {
+  margin-top: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-card .header-social-widget .social-icon p {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 /*#endregion*/
@@ -734,6 +799,21 @@ body, html {
   height: 100%;
   width: 100%;
   align-content: center;
+}
+
+.service-card .slide .content {
+  gap: 0.75rem;
+}
+
+.service-card .slide .content h3 {
+  margin-top: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-card .slide .content p {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .slide .content .width-control {
@@ -769,6 +849,41 @@ body, html {
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/*#endregion*/
+
+/*#region services*/
+
+.service-card {
+  display: flex;
+  align-content: center;
+}
+
+.service-card .icon {
+  padding: 1rem;
+}
+
+.service-card .icon i {
+  font-size: 3.75rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(252 175 60 / var(--tw-text-opacity));
+}
+
+.service-card .grid {
+  gap: 0.75rem;
+}
+
+.service-card .grid h3 {
+  margin-top: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-card .grid p {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 /*#endregion*/

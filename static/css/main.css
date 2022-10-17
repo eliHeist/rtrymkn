@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  outline: 1px solid rgb(144, 144, 144);
   font-family: poppins;
   font-size: 1rem;
 }
@@ -10,6 +9,10 @@
 body, html {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.link {
+  @apply text-secondary-500 font-medium;
 }
 
 .container {
@@ -72,6 +75,27 @@ body, html {
 }
 .slide .content p {
   @apply text-white py-2 mt-2 bg-black bg-opacity-50;
+}
+
+/*#endregion*/
+/*#region services*/
+.service-card {
+  @apply flex content-center;
+}
+.service-card .icon {
+  @apply p-4;
+}
+.service-card .icon i {
+  @apply text-6xl text-secondary-500;
+}
+.service-card .grid {
+  @apply gap-3;
+}
+.service-card .grid h3 {
+  @apply font-bold uppercase mt-0;
+}
+.service-card .grid p {
+  @apply text-slate-900;
 }
 
 /*#endregion*//*# sourceMappingURL=main.css.map */
