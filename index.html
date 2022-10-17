@@ -98,7 +98,7 @@
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, est laudantium? Impedit placeat, rem deleniti ab quia reprehenderit eveniet nemo.
                             </p>
-                            <button class="primary" formacation="#">
+                            <button class="secondary" formacation="#">
                                 read more
                             </button>
                         </div>
@@ -114,7 +114,7 @@
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, est laudantium? Impedit placeat, rem deleniti ab quia reprehenderit eveniet nemo.
                             </p>
-                            <button class="primary">
+                            <button class="secondary">
                                 <a href="#">read more</a>
                             </button>
                         </div>
@@ -170,35 +170,72 @@
     </section>
 
     <!-- video section -->
-    <section>
+    <section class="py-16">
         <div class="container">
-            <div class="flex flex-row-reverse gap-4">
-                <div class="text">
-                    <h2 class="uppercase">
+            <div class="grid grid-cols-2 gap-6">
+                <video src="./static/temp/wix advert.mkv" class=" flex-1" controls></video>
+                <div class="text flex-1">
+                    <h2 class="uppercase text-4xl font-medium">
                         you can create a world
-                        <p>
+                        <p class="text-4xl lowercase font-light">
                             where no child goes to bed hungry
                         </p>
                     </h2>
-                    <p class="lead">
+                    <p class="lead my-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos magni facilis quos ex architecto, autem beatae minus nihil provident?
                     </p>
                     <ul class="">
-                        <li class="">
+                        <li class="py-2">
+                            <i class="fas fa-check text-secondary-500 mr-2"></i>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, ea!
                         </li>
-                        <li class="">
+                        <li class="py-2">
+                            <i class="fas fa-check text-secondary-500 mr-2"></i>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, ea!
                         </li>
-                        <li class="">
+                        <li class="py-2">
+                            <i class="fas fa-check text-secondary-500 mr-2"></i>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, ea!
                         </li>
                     </ul>
-                    <button class="secondary">
+                    <button class="secondary mt-4">
                         read more
                     </button>
                 </div>
-                <video src=""></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- recent projects -->
+    <section class="py-16 bg-slate-100">
+        <div class="container">
+            <header class="flex justify-between mb-16">
+                <div class="left">
+                    <h2 class="text-5xl font-bold uppercase">recent events</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="right"><button class="primary">see all events</button></div>
+            </header>
+            <div class="grid gap-6 lg:grid-cols-4">
+                <div class="card bg-white rounded-2xl">
+                    <div class="img relative">
+                        <img src="./static/temp/tim-mossholder-hOF1bWoet_Q-unsplash.jpg" class="object-cover aspect-square" alt="">
+                        <div class="title absolute bottom-0 h-1/2 grid w-full text-center p-4">
+                            <h3 class="font-semibold text-lg uppercase mt-auto text-white">Health Camp</h3>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center grid">
+                        <p class="date">
+                            Date: 
+                            <span class="font-semibold">29th October 2022</span></p>
+                        <p class="lead my-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, sunt est?
+                        </p>
+                        <button class="secondary-outline mt-auto">read more</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
