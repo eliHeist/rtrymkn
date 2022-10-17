@@ -2,44 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     outline: 1px solid rgb(144, 144, 144);
+    font-family: poppins;
+    font-size: 1rem;
 }
 
-.container{
+.container {
     @apply mx-auto;
 }
 
-/* header */
-.logo img{
+.img-fluid{
+    @apply w-full h-full object-cover;
+}
+
+/*#region header */
+.logo img {
     @apply max-h-[100px]
 }
-.header-{
-    &widgets{
+
+.header- {
+    &widgets {
         @apply flex gap-8;
     }
-    &contact-widget{
+
+    &contact-widget {
         @apply flex content-center;
-        .icon{
+
+        .icon {
             @apply text-6xl mr-2 grid content-center;
-            i{
+
+            i {
                 @apply transform -rotate-12;
             }
         }
-        .text{
+
+        .text {
             @apply grid content-center;
-            h2{
+
+            h2 {
                 @apply font-bold uppercase text-primary-500;
             }
-            p{
+
+            p {
                 @apply text-gray-700
             }
         }
     }
-    &social-widget{
+
+    &social-widget {
         @apply grid grid-flow-col content-center gap-4;
-        .social-icon{
+
+        .social-icon {
             @apply text-2xl grid place-content-center rounded-full aspect-square text-white w-12 h-12;
         }
     }
 }
+/*#endregion*/
+
+
+/*#region single slides*/
+.slide{
+    @apply relative overflow-hidden;
+    img{
+        // @apply max-h-96;
+    }
+    .content{
+        @apply absolute top-0 left-0 w-full h-full grid content-center;
+        .width-control{
+            @apply w-full xl:max-w-2xl;
+        }
+        h2{
+            @apply text-6xl font-black uppercase text-white bg-black bg-opacity-40 py-2 w-fit;
+        }
+        p{
+            @apply text-white py-2 mt-2 bg-black bg-opacity-50;
+        }
+    }
+}
+/*#endregion*/

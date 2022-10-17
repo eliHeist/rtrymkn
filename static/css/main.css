@@ -3,13 +3,19 @@
 @tailwind utilities;
 * {
   outline: 1px solid rgb(144, 144, 144);
+  font-family: poppins;
+  font-size: 1rem;
 }
 
 .container {
   @apply mx-auto;
 }
 
-/* header */
+.img-fluid {
+  @apply w-full h-full object-cover;
+}
+
+/*#region header */
 .logo img {
   @apply max-h-[100px];
 }
@@ -40,4 +46,24 @@
 }
 .header-social-widget .social-icon {
   @apply text-2xl grid place-content-center rounded-full aspect-square text-white w-12 h-12;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*#endregion*/
+/*#region single slides*/
+.slide {
+  @apply relative overflow-hidden;
+}
+.slide .content {
+  @apply absolute top-0 left-0 w-full h-full grid content-center;
+}
+.slide .content .width-control {
+  @apply w-full xl:max-w-2xl;
+}
+.slide .content h2 {
+  @apply text-6xl font-black uppercase text-white bg-black bg-opacity-40 py-2 w-fit;
+}
+.slide .content p {
+  @apply text-white py-2 mt-2 bg-black bg-opacity-50;
+}
+
+/*#endregion*//*# sourceMappingURL=main.css.map */
