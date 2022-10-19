@@ -42,6 +42,15 @@ button.white-outline {
 button.white-outline:hover {
   @apply bg-white text-primary-500;
 }
+button.slate {
+  @apply bg-white py-2 px-6 uppercase rounded-full;
+}
+button.slate-outline {
+  @apply outline outline-1 outline-slate-500 py-2 px-6 uppercase rounded-full transition-colors;
+}
+button.slate-outline:hover {
+  @apply bg-secondary-500 text-white outline-slate-100;
+}
 
 .link {
   @apply text-secondary-500 font-medium;
@@ -53,6 +62,13 @@ button.white-outline:hover {
 
 .img-fluid {
   @apply w-full h-full object-cover;
+}
+
+.head-1 {
+  @apply uppercase text-6xl font-extrabold;
+}
+.head-1 .thin {
+  @apply text-6xl font-thin;
 }
 
 /*#region header */

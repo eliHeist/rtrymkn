@@ -588,12 +588,16 @@ video {
   margin-left: auto;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .flex {
@@ -653,10 +657,6 @@ video {
   flex-direction: column;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -675,6 +675,15 @@ video {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .bg-blue-900 {
@@ -741,11 +750,6 @@ video {
   padding-bottom: 4rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
@@ -771,6 +775,16 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-medium {
@@ -924,6 +938,40 @@ button.white-outline:hover {
   color: rgb(0 50 160 / var(--tw-text-opacity));
 }
 
+button.slate {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-transform: uppercase;
+}
+
+button.slate-outline {
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-transform: uppercase;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #64748b;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+button.slate-outline:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 153 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  outline-color: #f1f5f9;
+}
+
 .link {
   font-weight: 500;
   --tw-text-opacity: 1;
@@ -940,6 +988,19 @@ button.white-outline:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.head-1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.head-1 .thin {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 100;
 }
 
 /*#region header */
@@ -1185,6 +1246,18 @@ button.white-outline:hover {
 
 /*#endregion*/
 
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
@@ -1194,6 +1267,10 @@ button.white-outline:hover {
 @media (min-width: 1024px) {
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 /*# sourceMappingURL=style.css.map */
