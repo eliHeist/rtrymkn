@@ -60,8 +60,12 @@ button{
     @apply text-secondary-500 font-medium
 }
 
+.lead{
+    @apply text-lg;
+}
+
 .container {
-    @apply mx-auto;
+    @apply mx-auto px-4;
 }
 
 .img-fluid{
@@ -169,7 +173,13 @@ button{
 }
 /*#endregion*/
 
+/*#region our impact*/
+.slate-primary{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
+}
 
+/*#endregion*/
 
 
 

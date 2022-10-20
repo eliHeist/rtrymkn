@@ -56,8 +56,12 @@ button.slate-outline:hover {
   @apply text-secondary-500 font-medium;
 }
 
+.lead {
+  @apply text-lg;
+}
+
 .container {
-  @apply mx-auto;
+  @apply mx-auto px-4;
 }
 
 .img-fluid {
@@ -147,6 +151,13 @@ button.slate-outline:hover {
 }
 .service-card .grid p {
   @apply text-slate-900;
+}
+
+/*#endregion*/
+/*#region our impact*/
+.slate-primary {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
 }
 
 /*#endregion*//*# sourceMappingURL=main.css.map */
