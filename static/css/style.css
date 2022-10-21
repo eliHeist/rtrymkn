@@ -733,11 +733,6 @@ video {
   background-color: rgb(255 153 0 / var(--tw-bg-opacity));
 }
 
-.bg-primary-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 59 76 / var(--tw-bg-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -879,16 +874,6 @@ video {
 .text-lime-500 {
   --tw-text-opacity: 1;
   color: rgb(132 204 22 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -1338,7 +1323,7 @@ button.slate-outline:hover {
 
 .slate-primary {
   background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgb(240, 238, 238) 0%, rgb(240, 238, 238) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
+  background: linear-gradient(90deg, rgb(241, 245, 249) 0%, rgb(241, 245, 249) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
 }
 
 /*#endregion*/

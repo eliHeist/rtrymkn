@@ -157,7 +157,7 @@ button.slate-outline:hover {
 /*#region our impact*/
 .slate-primary {
   background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgb(240, 238, 238) 0%, rgb(240, 238, 238) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
+  background: linear-gradient(90deg, rgb(241, 245, 249) 0%, rgb(241, 245, 249) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
 }
 
 /*#endregion*//*# sourceMappingURL=main.css.map */
