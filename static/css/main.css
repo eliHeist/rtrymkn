@@ -76,12 +76,8 @@ button.slate-outline:hover {
 }
 
 /*#region header */
-.logo img {
-  @apply max-h-[100px];
-}
-
 .header-widgets {
-  @apply flex gap-8;
+  @apply gap-8;
 }
 .header-contact-widget {
   @apply flex content-center;
@@ -102,7 +98,7 @@ button.slate-outline:hover {
   @apply text-gray-700;
 }
 .header-social-widget {
-  @apply grid grid-flow-col content-center gap-4;
+  @apply grid grid-flow-col content-center justify-between gap-4;
 }
 .header-social-widget .social-icon {
   @apply text-2xl grid place-content-center rounded-full aspect-square text-white w-12 h-12;

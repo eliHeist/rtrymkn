@@ -82,13 +82,10 @@ button{
 }
 
 /*#region header */
-.logo img {
-    @apply max-h-[100px]
-}
 
 .header-{
     &widgets {
-        @apply flex gap-8;
+        @apply gap-8;
     }
 
     &contact-widget {
@@ -116,7 +113,7 @@ button{
     }
 
     &social-widget {
-        @apply grid grid-flow-col content-center gap-4;
+        @apply grid grid-flow-col content-center justify-between gap-4;
 
         .social-icon {
             @apply text-2xl grid place-content-center rounded-full aspect-square text-white w-12 h-12;

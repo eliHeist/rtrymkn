@@ -67,4 +67,34 @@ ScrollTrigger.batch('.trigger', {
 // t2.play()
 //#endregion
 
+//#region mobile nav
+const hamburger = document.querySelector('#hamburger')
+const closeMenu = document.querySelector('#close-menu')
+const smMenu = document.querySelector('#nav-sm')
+
+nav_is_visible = false
+
+hamburger.addEventListener('click', () => {
+   toggleNav()
+})
+closeMenu.addEventListener('click', () => {
+   toggleNav()
+})
+
+// default state on load
+gsap.set(smMenu, { clipPath: 'circle(0)', transition: 'clip-path .5s ease-out', duration: 1 })
+
+const NavTL = gsap.timeline({ defaults: { Easings: Expo.EaseOut } })
+
+function toggleNav() {
+   if (nav_is_visible) {
+      NavTL.to(smMenu, { clipPath: 'circle(0)', duration: .5 })
+      NavTL.play()
+   } else {
+      NavTL.fromTo(smMenu, { clipPath: 'circle(0%)' }, { clipPath: 'circle(100%)', duration: .5 })
+      NavTL.play()
+   }
+   nav_is_visible = !nav_is_visible
+}
+//#endregion
 

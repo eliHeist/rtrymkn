@@ -22,9 +22,9 @@
         <section class="py-1">
             <div class="container flex justify-between">
                 <div class="logo">
-                    <img src="./static/images/logo-final.png" alt="Rotary Club Mukono">
+                    <img src="./static/images/logo-final.png" alt="Rotary Club Mukono" class="max-h-[70px] md:max-h-[100px]">
                 </div>
-                <div class="header-widgets">
+                <div class="hidden md:flex header-widgets">
                     <div class="header-contact-widget"> 
                         <!-- contact asset -->
                         <div class="icon">
@@ -57,9 +57,77 @@
                         </div>
                     </div>
                 </div>
+                <div class="md:hidden  grid content-center">
+                    <i id="hamburger" class="fas fa-bars text-4xl z-[60]"></i>
+                </div>
             </div>
         </section>
-        <nav class="bg-primary-500 py-2">
+        <div id="nav-sm" class="md:hidden fixed bg-white top-0 h-screen w-full left-0 z-50 grid">
+            <div class="p-8 grid gap-8 mt-8">
+                <div class="header-contact-widget">
+                    <!-- contact asset -->
+                    <div class="icon">
+                        <i class="fa fa-envelope-open"></i>
+                    </div>
+                    <div class="text">
+                        <h2>Email</h2>
+                        <p class="">email@example.com</p>
+                    </div>
+                </div>
+                <div class="header-contact-widget">
+                    <!-- contact asset -->
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h2>Call Now</h2>
+                        <p class="">256 760-942-196</p>
+                    </div>
+                </div>
+                <div class="header-social-widget">
+                    <div class="social-icon bg-blue-900">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="social-icon bg-blue-500">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="social-icon bg-pink-600">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <ul class="flex flex-col sm:flex-row list-none gap-8 py-8 text-center">
+                <li class="">
+                    <a href="#" class="h-full w-full text-primary-500 uppercase">
+                        home
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="h-full w-full text-primary-500 uppercase">
+                        about
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="h-full w-full text-primary-500 uppercase">
+                        events
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="h-full w-full text-primary-500 uppercase">
+                        news
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="h-full w-full text-primary-500 uppercase">
+                        contact
+                    </a>
+                </li>
+            </ul>
+            <div class="grid justify-center text-red-500 bottom-0">
+                <i id="close-menu" class="fas fa-window-close text-4xl"></i>
+            </div>
+        </div>
+        <nav class="hidden md:block bg-primary-500 py-2">
             <div class="container">
                 <ul class="flex flex-col sm:flex-row list-none gap-8">
                     <li class="">
