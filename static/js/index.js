@@ -43,12 +43,24 @@ setInterval(slide, 10000)
 
 //#region intersection observer
 gsap.set(".slide-in-top", { y: 200, clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' });
+gsap.set(".slide-in-right", { x: -400, clipPath: 'polygon(100% 0, 100% 0, 100% 100%, 100% 100%)' });
+gsap.set(".slide-in-left", { x: 400, clipPath: 'polygon(0% 0, 0% 0, 0% 100%, 0% 100%)' });
+gsap.set('.fade-in', { opacity: 0, scale: 0.9 })
+gsap.set('.pop-in', { opacity: 0.5, scale: 0.2 })
 
 ScrollTrigger.batch('.trigger', {
-   // onEnter: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.3, duration: 1 }),
    onEnter: (batch) => {
-      elems = batch[0].querySelectorAll('.slide-in-top')
-      gsap.to(elems, { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: 0, stagger: 0.2, duration: 1 })
+      slideElements = batch[0].querySelectorAll('.slide-in-top')
+      slideRightElements = batch[0].querySelectorAll('.slide-in-right')
+      slideLeftElements = batch[0].querySelectorAll('.slide-in-left')
+      fadeElements = batch[0].querySelectorAll('.fade-in')
+      popElements = batch[0].querySelectorAll('.pop-in')
+
+      gsap.to(slideElements, { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: 0, stagger: 0.2, duration: 1 })
+      gsap.to(slideRightElements, { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', x: 0, stagger: 0.2, duration: 1 })
+      gsap.to(slideLeftElements, { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', x: 0, stagger: 0.2, duration: 1 })
+      gsap.to(fadeElements, { opacity: 1, scale: 1, stagger: 0.2, duration: 0.5 })
+      gsap.to(popElements, { opacity: 1, scale: 1, stagger: 0.2, duration: 0.5 })
    },
    start: 'center bottom'
 })
