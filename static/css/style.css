@@ -1389,6 +1389,10 @@ button.slate-outline:hover {
   .md\:max-h-\[100px\] {
     max-height: 100px;
   }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
