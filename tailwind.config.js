@@ -10,7 +10,8 @@ module.exports = {
         },
         secondary: {
           500: "rgb(255, 153, 0)"
-        }
+        },
+        dark: "rgb(24, 25, 25)",
       }
     },
   },

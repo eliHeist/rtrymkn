@@ -60,6 +60,10 @@ button.slate-outline:hover {
   @apply text-lg;
 }
 
+.sec {
+  @apply pt-32;
+}
+
 .container {
   @apply mx-auto px-4;
 }
@@ -156,11 +160,12 @@ button.slate-outline:hover {
 
 /*#endregion*/
 /*#region our impact*/
-.slate-primary {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgb(241, 245, 249) 0%, rgb(241, 245, 249) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
+@media (min-width: 768px) {
+  .slate-primary {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(241, 245, 249) 0%, rgb(241, 245, 249) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
+  }
 }
-
 /*#endregion*/
 /*#region scroll anims*/
 /*#endregion *//*# sourceMappingURL=main.css.map */

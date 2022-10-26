@@ -562,6 +562,10 @@ video {
   bottom: 0px;
 }
 
+.-left-4 {
+  left: -1rem;
+}
+
 .z-\[60\] {
   z-index: 60;
 }
@@ -599,10 +603,6 @@ video {
 
 .mt-16 {
   margin-top: 4rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .mt-6 {
@@ -657,10 +657,6 @@ video {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -670,16 +666,16 @@ video {
   width: 6rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .list-none {
   list-style-type: none;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -757,6 +753,11 @@ video {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 25 25 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -795,16 +796,21 @@ video {
   padding-bottom: 4rem;
 }
 
-.pr-4 {
+.px-4 {
+  padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
 }
 
 .text-center {
@@ -1087,6 +1093,10 @@ button.slate-outline:hover {
   line-height: 1.75rem;
 }
 
+.sec {
+  padding-top: 8rem;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -1341,9 +1351,11 @@ button.slate-outline:hover {
 
 /*#region our impact*/
 
-.slate-primary {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgb(241, 245, 249) 0%, rgb(241, 245, 249) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
+@media (min-width: 768px) {
+  .slate-primary {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(241, 245, 249) 0%, rgb(241, 245, 249) 50%, rgb(24, 25, 25) 50%, rgb(24, 25, 25) 100%);
+  }
 }
 
 /*#endregion*/
@@ -1374,6 +1386,18 @@ button.slate-outline:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1390,8 +1414,42 @@ button.slate-outline:hover {
     max-height: 100px;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+
+  .md\:pl-12 {
+    padding-left: 3rem;
   }
 }
 
