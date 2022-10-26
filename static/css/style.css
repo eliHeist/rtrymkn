@@ -566,6 +566,10 @@ video {
   left: -1rem;
 }
 
+.z-\[100\] {
+  z-index: 100;
+}
+
 .z-\[60\] {
   z-index: 60;
 }
@@ -653,6 +657,10 @@ video {
   max-height: 70px;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .w-full {
   width: 100%;
 }
@@ -666,10 +674,6 @@ video {
   width: 6rem;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -680,6 +684,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .content-center {
@@ -718,6 +726,11 @@ video {
   border-radius: 1rem;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-blue-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
@@ -731,11 +744,6 @@ video {
 .bg-pink-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-primary-500 {
@@ -756,6 +764,16 @@ video {
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(24 25 25 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-primary-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 59 76 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -819,6 +837,11 @@ video {
 
 .align-middle {
   vertical-align: middle;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-4xl {
@@ -927,6 +950,14 @@ video {
 
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1382,6 +1413,11 @@ button.slate-outline:hover {
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 

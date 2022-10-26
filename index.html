@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="./static/css/slick-theme.css">
 </head>
 <body>
+    <section id="splash" class="fixed top-0 left-0 h-screen w-screen bg-primary-600 z-[100] grid place-content-center">
+        <h1 class="text-xl sm:text-6xl text-white">
+            Rotary Club of Mukono
+        </h1>
+    </section>
     <!-- header -->
     <header>
         <section class="py-1">
@@ -645,6 +650,14 @@
     <script src="./static/js/gsap/ScrollTrigger.min.js"></script>
     <!-- custom js -->
     <script src="./static/js/index.js"></script>
+
+    <script>
+        const splash = document.querySelector('#splash')
+        gsap.set(splash, { transition: 'all ease', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' })
+        let firstTl = gsap.timeline({ defaults: { delay: 1.5 } })
+        firstTl.to(splash, { clipPath: 'polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%)', duration: 0.3 })
+        .to(splash, { clipPath: 'polygon(10% 10%, 90% 10%, 90% 10%, 10% 10%)', y: -200, duration: 2, Easings: Expo.EaseOut }, '-=1.4')
+    </script>
     
 </body>
 </html>
