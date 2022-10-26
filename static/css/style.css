@@ -1206,15 +1206,23 @@ button.slate-outline:hover {
 
 /*#endregion*/
 
-/*#region single slides*/
+/*#region slider*/
 
-.slide {
+#slides {
   position: relative;
-  overflow: hidden;
+  max-height: 85vh;
+  min-height: 500px;
 }
 
-.slide img {
-  max-height: 700px;
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  left: 0;
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+  transition: all 0.7s ease-in-out;
 }
 
 .slide .content {
@@ -1224,7 +1232,7 @@ button.slate-outline:hover {
   display: grid;
   height: 100%;
   width: 100%;
-  align-content: center;
+  place-content: center;
 }
 
 .service-card .slide .content {
@@ -1242,44 +1250,22 @@ button.slate-outline:hover {
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.slide .content .width-control {
-  width: 100%;
+.slide .width-control {
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1280px) {
-  .slide .content .width-control {
-    max-width: 42rem;
-  }
-}
-
-.slide .content h2 {
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 0.75rem;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.4;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.slide .width-control h2 {
+  margin-bottom: 1rem;
   font-size: 3.75rem;
   line-height: 1;
-  font-weight: 900;
-  text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  filter: drop-shadow(4px 4px 5px black);
 }
 
-.slide .content p {
-  margin-top: 0.5rem;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.5;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.slide .content button {
-  margin-top: 1rem;
+.slide .width-control .fade-in {
+  opacity: 0;
+  scale: 0.1;
 }
 
 /*#endregion*/
