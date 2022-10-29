@@ -19,7 +19,148 @@
 </head>
 
 <body>
-
+   <!-- header -->
+   <header>
+      <section class="py-1">
+         <div class="container flex justify-between">
+            <div class="logo">
+               <img src="./static/images/logo-final.png" alt="Rotary Club Mukono" class="max-h-[70px] md:max-h-[100px]">
+            </div>
+            <div class="hidden md:flex header-widgets">
+               <div class="header-contact-widget">
+                  <!-- contact asset -->
+                  <div class="icon">
+                     <i class="fa fa-envelope-open"></i>
+                  </div>
+                  <div class="text">
+                     <h2>Email</h2>
+                     <p class="">email@example.com</p>
+                  </div>
+               </div>
+               <div class="header-contact-widget">
+                  <!-- contact asset -->
+                  <div class="icon">
+                     <i class="fa fa-phone"></i>
+                  </div>
+                  <div class="text">
+                     <h2>Call Now</h2>
+                     <p class="">256 760-942-196</p>
+                  </div>
+               </div>
+               <div class="header-social-widget">
+                  <div class="social-icon bg-blue-900">
+                     <i class="fab fa-facebook"></i>
+                  </div>
+                  <div class="social-icon bg-blue-500">
+                     <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="social-icon bg-pink-600">
+                     <i class="fab fa-instagram"></i>
+                  </div>
+               </div>
+            </div>
+            <div class="md:hidden  grid content-center">
+               <i id="hamburger" class="fas fa-bars text-4xl z-[60]"></i>
+            </div>
+         </div>
+      </section>
+      <div id="nav-sm" class="md:hidden fixed bg-white top-0 h-screen w-full left-0 z-50 grid">
+         <div class="p-8 grid gap-8 mt-8">
+            <div class="header-contact-widget">
+               <!-- contact asset -->
+               <div class="icon">
+                  <i class="fa fa-envelope-open"></i>
+               </div>
+               <div class="text">
+                  <h2>Email</h2>
+                  <p class="">email@example.com</p>
+               </div>
+            </div>
+            <div class="header-contact-widget">
+               <!-- contact asset -->
+               <div class="icon">
+                  <i class="fa fa-phone"></i>
+               </div>
+               <div class="text">
+                  <h2>Call Now</h2>
+                  <p class="">256 760-942-196</p>
+               </div>
+            </div>
+            <div class="header-social-widget">
+               <div class="social-icon bg-blue-900">
+                  <i class="fab fa-facebook"></i>
+               </div>
+               <div class="social-icon bg-blue-500">
+                  <i class="fab fa-twitter"></i>
+               </div>
+               <div class="social-icon bg-pink-600">
+                  <i class="fab fa-instagram"></i>
+               </div>
+            </div>
+         </div>
+         <ul class="flex flex-col sm:flex-row list-none gap-8 py-8 text-center">
+            <li class="">
+               <a href="./index.html" class="h-full w-full text-primary-500 uppercase">
+                  home
+               </a>
+            </li>
+            <li class="">
+               <a href="./about.html" class="h-full w-full text-primary-500 uppercase">
+                  about
+               </a>
+            </li>
+            <li class="">
+               <a href="./events.html" class="h-full w-full text-primary-500 uppercase">
+                  events
+               </a>
+            </li>
+            <li class="">
+               <a href="./news.html" class="h-full w-full text-primary-500 uppercase">
+                  news
+               </a>
+            </li>
+            <li class="">
+               <a href="./contact.html" class="h-full w-full text-primary-500 uppercase">
+                  contact
+               </a>
+            </li>
+         </ul>
+         <div class="grid justify-center text-red-500 bottom-0">
+            <i id="close-menu" class="fas fa-window-close text-4xl"></i>
+         </div>
+      </div>
+      <nav class="hidden md:block bg-primary-500 py-2">
+         <div class="container">
+            <ul class="flex flex-col sm:flex-row list-none gap-8">
+               <li class="">
+                  <a href="./index.html" class="h-full w-full text-white uppercase">
+                     home
+                  </a>
+               </li>
+               <li class="./about.html">
+                  <a href="#" class="h-full w-full text-white uppercase">
+                     about
+                  </a>
+               </li>
+               <li class="">
+                  <a href="./events.html" class="h-full w-full text-white uppercase">
+                     events
+                  </a>
+               </li>
+               <li class="">
+                  <a href="./news.html" class="h-full w-full text-white uppercase">
+                     news
+                  </a>
+               </li>
+               <li class="">
+                  <a href="./contact.html" class="h-full w-full text-white uppercase">
+                     contact
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
 
 <!-- news -->
 <section class="py-20">
@@ -32,7 +173,7 @@
    <div class="container mt-16 trigger">
       <div class="my-4 grid gap-4 lg:grid-cols-3">
          <article class="grid slide-in-top">
-            <img src="https://can.ug/wp-content/uploads/2021/03/2N3A9094-1030x687.jpg" alt=""
+            <img src="./static/images/dev/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt=""
                class="img-fluid aspect-video">
             <div class="flex justify-between my-4">
                <div class="text-gray-400">
@@ -53,7 +194,7 @@
             </form>
          </article>
          <article class="grid slide-in-top">
-            <img src="https://can.ug/wp-content/uploads/2021/03/2N3A9094-1030x687.jpg" alt=""
+            <img src="./static/images/dev/chang-duong-Sj0iMtq_Z4w-unsplash.jpg" alt=""
                class="img-fluid aspect-video">
             <div class="flex justify-between my-4">
                <div class="text-gray-400">
@@ -74,7 +215,7 @@
             </form>
          </article>
          <article class="grid slide-in-top">
-            <img src="https://can.ug/wp-content/uploads/2021/03/2N3A9094-1030x687.jpg" alt=""
+            <img src="./static/images/dev/helena-lopes-PGnqT0rXWLs-unsplash.jpg" alt=""
                class="img-fluid aspect-video">
             <div class="flex justify-between my-4">
                <div class="text-gray-400">
