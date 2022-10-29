@@ -62,7 +62,7 @@ ScrollTrigger.batch('.trigger', {
       gsap.to(fadeElements, { opacity: 1, scale: 1, stagger: 0.2, duration: 0.5 })
       gsap.to(popElements, { opacity: 1, scale: 1, stagger: 0.2, duration: 0.5 })
    },
-   start: '400px bottom',
+   start: '300px bottom',
    // markers: true
 })
 // t2.play()
