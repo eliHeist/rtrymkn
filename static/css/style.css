@@ -726,9 +726,9 @@ video {
   border-radius: 1rem;
 }
 
-.bg-white {
+.bg-primary-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(38 59 76 / var(--tw-bg-opacity));
 }
 
 .bg-blue-900 {
@@ -744,6 +744,11 @@ video {
 .bg-pink-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-primary-500 {
@@ -764,16 +769,6 @@ video {
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(24 25 25 / var(--tw-bg-opacity));
-}
-
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
-.bg-primary-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 59 76 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -817,6 +812,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-16 {
@@ -903,6 +903,11 @@ video {
   text-transform: lowercase;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-primary-500 {
   --tw-text-opacity: 1;
   color: rgb(0 50 160 / var(--tw-text-opacity));
@@ -911,11 +916,6 @@ video {
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-secondary-500 {
@@ -1117,6 +1117,52 @@ button.slate-outline:hover {
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 153 0 / var(--tw-text-opacity));
+}
+
+.link-2 {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.service-card .link-2 {
+  gap: 0.75rem;
+}
+
+.service-card .link-2 h3 {
+  margin-top: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-card .link-2 p {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.link-2 i {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  rotate: 45deg;
+  transition: rotate 100ms ease;
+}
+
+.link-2 span {
+  margin-left: 0.5rem;
+  transition: all 200ms ease;
+}
+
+.link-2:hover i {
+  scale: 1.2;
+  rotate: 0deg;
+}
+
+.link-2:hover span {
+  margin-left: 1rem;
 }
 
 .lead {
@@ -1486,6 +1532,10 @@ button.slate-outline:hover {
 
   .md\:pl-12 {
     padding-left: 3rem;
+  }
+
+  .md\:pl-8 {
+    padding-left: 2rem;
   }
 }
 

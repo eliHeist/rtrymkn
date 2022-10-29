@@ -56,6 +56,26 @@ button.slate-outline:hover {
   @apply text-secondary-500 font-medium;
 }
 
+.link-2 {
+  @apply font-semibold text-xl uppercase grid grid-flow-col content-center;
+}
+.link-2 i {
+  @apply text-2xl;
+  rotate: 45deg;
+  transition: rotate 100ms ease;
+}
+.link-2 span {
+  @apply ml-2;
+  transition: all 200ms ease;
+}
+.link-2:hover i {
+  scale: 1.2;
+  rotate: 0deg;
+}
+.link-2:hover span {
+  @apply ml-4;
+}
+
 .lead {
   @apply text-lg;
 }

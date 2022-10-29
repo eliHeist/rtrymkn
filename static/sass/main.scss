@@ -60,6 +60,28 @@ button{
     @apply text-secondary-500 font-medium
 }
 
+.link-2{
+    @apply font-semibold text-xl uppercase grid grid-flow-col content-center;
+    i{
+        @apply text-2xl;
+        rotate: 45deg;
+        transition: rotate 100ms ease;
+    }
+    span{
+        @apply ml-2;
+        transition: all 200ms ease;
+    }
+    &:hover{
+        i{
+            scale: 1.2;
+            rotate: 0deg;
+        }
+        span{
+            @apply ml-4;
+        }
+    }
+}
+
 .lead{
     @apply text-lg;
 }
