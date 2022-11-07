@@ -19,11 +19,6 @@
 </head>
 
 <body>
-   <section id="splash" class="fixed top-0 left-0 h-screen w-screen bg-primary-600 z-[100] grid place-content-center">
-      <h1 class="text-xl sm:text-6xl text-white">
-         Rotary Club of Mukono
-      </h1>
-   </section>
    <!-- header -->
    <header>
       <section class="py-1">
@@ -167,13 +162,33 @@
       </nav>
    </header>
 
-   <!-- upcoming events -->
-   <main></main>
+   <!-- main event -->
+   <main class="py-16">
+      <div class="container">
+         <div class="grid gap-8 md:grid-cols-2">
+            <figure>
+               <img src="./static/images/dev/thought-catalog-23KdVfc395A-unsplash.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="grid">
+               <ol class="list-none">
+                  <li class="flex gap-4 content-center">
+                     <div class="icon">
+                        <i class="fas fa-location text-2xl"></i>
+                     </div>
+                     <div class="text-2xl font-semibold">
+                        Kisenyi, Mukono
+                     </div>
+                  </li>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </main>
    
    <!-- upcoming events -->
    <section class="py-20 trigger">
       <header class="text-center fade-in">
-         <h2 class="head-1">Upcoming <span class="thin">event</span></h2>
+         <h2 class="head-1">Upcoming <span class="thin">events</span></h2>
          <p class="my-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus molestiae deleniti reiciendis explicabo.
          </p>
@@ -231,45 +246,66 @@
          </div>
       </div>
    </section>
-
-   <!-- become a member -->
-   <section class="bg-secondary-500 relative grid trigger">
-      <img src="https://www.humanitarianplatformuganda.org/wp-content/uploads/2019/11/P1-800x445.jpeg" alt=""
-         class="object-cover md:w-1/2 md:ml-auto aspect-video slide-in-left">
-      <div class="md:absolute top-0 left-0 w-full h-full py-16">
-         <div class="container">
-            <div class="h-full md:w-1/2 md:pr-4 grid align-middle">
-               <h2 class="font-bold uppercase text-5xl fade-in">
-                  become a member
-               </h2>
-               <p class="text-4xl my-2 fade-in">
-                  Lets make a change together
+   
+   <!-- past events -->
+   <section class="py-20 trigger">
+      <header class="text-center fade-in">
+         <h2 class="head-1">Recent <span class="thin">events</span></h2>
+         <p class="my-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus molestiae deleniti reiciendis explicabo.
+         </p>
+      </header>
+      <div class="container mt-16">
+         <div class="my-4 grid gap-4 lg:grid-cols-3">
+            <article class="grid slide-in-top">
+               <img
+                  src="https://loveugandafoundation.org/wp-content/uploads/2020/05/childcare-orphanage-foundations-in-uganda-charity-organisations-in-uganda-help-the-needy-child-labour-prevention.jpg"
+                  alt="" class="img-fluid aspect-video">
+               <h3 class="font-bold mt-4 text-3xl">Health Camp</h3>
+               <p class="text-secondary-500 my-2">21st Ocboter 2022 at Colline Hotel Mukono</p>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae cumque ipsam,
+                  recusandae at magni voluptatum voluptates quam, eligendi magnam ad iste numquam maiores consequatur.
                </p>
-               <p class=" mt-4 fade-in">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo libero hic dignissimos sapiente tempora
-                  iure eum quam alias minima doloremque quis, aperiam distinctio omnis non quia aut corrupti ea.
-                  Excepturi?
+               <form>
+                  <button type="submit" formaction="#" class="slate-outline my-4">
+                     read more
+                  </button>
+               </form>
+            </article>
+            <article class="grid slide-in-top">
+               <img
+                  src="https://loveugandafoundation.org/wp-content/uploads/2020/05/childcare-orphanage-foundations-in-uganda-charity-organisations-in-uganda-help-the-needy-child-labour-prevention.jpg"
+                  alt="" class="img-fluid aspect-video">
+               <h3 class="font-bold mt-4 text-3xl">Health Camp</h3>
+               <p class="text-secondary-500 my-2">21st Ocboter 2022 at Colline Hotel Mukono</p>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae cumque ipsam,
+                  recusandae at magni voluptatum voluptates quam, eligendi magnam ad iste numquam maiores consequatur.
                </p>
-               <button class="white-outline mt-6 w-fit">
-                  Join us
-               </button>
-            </div>
+               <form>
+                  <button type="submit" formaction="#" class="slate-outline my-4">
+                     read more
+                  </button>
+               </form>
+            </article>
+            <article class="grid slide-in-top">
+               <img
+                  src="https://loveugandafoundation.org/wp-content/uploads/2020/05/childcare-orphanage-foundations-in-uganda-charity-organisations-in-uganda-help-the-needy-child-labour-prevention.jpg"
+                  alt="" class="img-fluid aspect-video">
+               <h3 class="font-bold mt-4 text-3xl">Health Camp</h3>
+               <p class="text-secondary-500 my-2">21st Ocboter 2022 at Colline Hotel Mukono</p>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae cumque ipsam,
+                  recusandae at magni voluptatum voluptates quam, eligendi magnam ad iste numquam maiores consequatur.
+               </p>
+               <form>
+                  <button type="submit" formaction="#" class="slate-outline my-4">
+                     read more
+                  </button>
+               </form>
+            </article>
          </div>
-      </div>
-   </section>
-
-   <!-- subscribe -->
-   <section class="py-20 bg-secondary-500">
-      <div class="container grid justify-center text-center">
-         <div class="text">
-            <h2 class="text-3xl font-semibold">We got a newsletter</h2>
-            <p class="lead mt-4">
-               Subscribe to stay informed about all our activities, news and upcoming events.
-            </p>
-         </div>
-         <div class="mt-8"><button class="white text-secondary-500 font-semibold">
-               subscribe now
-            </button></div>
       </div>
    </section>
 
