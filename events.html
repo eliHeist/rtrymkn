@@ -165,21 +165,52 @@
    <!-- main event -->
    <main class="py-16">
       <div class="container">
-         <div class="grid gap-8 md:grid-cols-2">
+         <div class="grid gap-8 md:grid-cols-2 relative">
+            <div class="absolute left-8 -top-4 flex bg-white">
+               <div class="p-4 bg-primary-500 text-white font-semibold">NEXT EVENT</div>
+               <div class="p-4 bg-secondary-500 text-black font-semibold">10 Days</div>
+            </div>
             <figure>
                <img src="./static/images/dev/thought-catalog-23KdVfc395A-unsplash.jpg" alt="" class="img-fluid">
             </figure>
             <div class="grid">
-               <ol class="list-none">
+               <ol class="list-none flex flex-col gap-4">
+                  <li class="flex gap-4 content-center mb-4">
+                     <h3 class="font-bold text-4xl uppercase text-primary-500">Health Camp</h3>
+                  </li>
                   <li class="flex gap-4 content-center">
                      <div class="icon">
-                        <i class="fas fa-location text-2xl"></i>
+                        <i class="fas fa-location-pin text-2xl text-secondary-500"></i>
                      </div>
-                     <div class="text-2xl font-semibold">
-                        Kisenyi, Mukono
+                     <div class="text-2xl font-medium">
+                        Katovu Health Center
+                     </div>
+                  </li>
+                  <li class="flex gap-4 content-center">
+                     <div class="icon">
+                        <i class="fas fa-calendar text-2xl text-secondary-500"></i>
+                     </div>
+                     <div class="text-2xl font-medium">
+                        22<sup>nd</sup> October 2022
+                     </div>
+                  </li>
+                  <li class="flex gap-4 content-center">
+                     <div class="icon">
+                        <i class="fas fa-clock text-2xl text-secondary-500"></i>
+                     </div>
+                     <div class="text-2xl font-medium">
+                        9:00 AM to 4:00 PM
                      </div>
                   </li>
                </ol>
+               <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi? Exercitationem repellendus sit ea excepturi est earum, a incidunt temporibus.   
+               </p>
+               <div>
+                  <button class="primary">
+                     <a href="#">read more</a>
+                  </button>
+               </div>
             </div>
          </div>
       </div>
